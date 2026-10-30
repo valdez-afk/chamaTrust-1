@@ -1,99 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works | ChamaTrust</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:wght@500;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works - ChamaTrust</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <p class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>ChamaTrust</p>
-        <p class="tagline">Building trust in community savings groups.</p>
-    </header>
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="how-it-works.html" aria-current="page">How It Works</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">ChamaTrust</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="how-it-works.html" class="active">How It Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn-login">Login</a></li>
+      </ul>
     </nav>
-    <main>
-        <section class="hero">
-            <h1>How ChamaTrust Works</h1>
-            <p>From registering your chama to reviewing a new member, here is how ChamaTrust helps
-                your group keep clear records and make fair decisions.</p>
-        </section>
+  </header>
 
-        <section>
-            <h2>For Chama Administrators</h2>
-            <ol class="steps">
-                <li>
-                    <h3>Create your account</h3>
-                    <p>Register as an administrator with your name, email address, phone number and a password.</p>
-                </li>
-                <li>
-                    <h3>Register your chama and members</h3>
-                    <p>Add your chama and enter the details of each member so every person has a record.</p>
-                </li>
-                <li>
-                    <h3>Record contributions and payouts</h3>
-                    <p>Log what each member contributes and receives, so your group's history is kept in one place.</p>
-                </li>
-                <li>
-                    <h3>Review trust scores and reported defaults</h3>
-                    <p>See each member's trust score, calculated from the recorded data, and any default that has been reported.</p>
-                </li>
-                <li>
-                    <h3>Check new members before admitting them</h3>
-                    <p>Search for a prospective member across participating chamas and review their record before you decide.</p>
-                </li>
-            </ol>
-        </section>
+  <main class="works-container">
+    <section class="works-hero">
+      <h1>How ChamaTrust Works</h1>
+      <p>Simple steps to digitize your community savings group safely.</p>
+    </section>
 
-        <section>
-            <h2>For Chama Members</h2>
-            <ol class="steps">
-                <li>
-                    <h3>Sign up</h3>
-                    <p>Create a member account using your name, email address and phone number.</p>
-                </li>
-                <li>
-                    <h3>View your record</h3>
-                    <p>Sign in to see your own contributions, payouts and trust score.</p>
-                </li>
-                <li>
-                    <h3>Ask for corrections</h3>
-                    <p>If you find a mistake in your record, you can ask for it to be corrected.</p>
-                </li>
-            </ol>
-        </section>
+    <section class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">1</span>
+        <h3>Register Your Group</h3>
+        <p>Chama administrators create a group account and invite members using phone numbers or national IDs.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">2</span>
+        <h3>Automated M-Pesa Deposits</h3>
+        <p>Members contribute funds via automated M-Pesa STK push or USSD prompts (*384*55#). Ledgers update instantly.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">3</span>
+        <h3>Dual-Key Multi-Sig Loans</h3>
+        <p>Every loan payout requires dual digital sign-off from two authorized officials before funds disburse via B2C M-Pesa.</p>
+      </div>
+    </section>
+  </main>
 
-        <section class="goal">
-            <h2>About the Trust Score</h2>
-            <p>The trust score is a summary of a member's recorded contributions and payouts. It
-                helps administrators see a member's history quickly.</p>
-            <p>The score supports your decision; it should not make the decision for you. Records
-                should be reviewed fairly, and a score alone should not decide whether a person is
-                accepted into a chama or given a loan.</p>
-        </section>
-    </main>
-    <aside>
-        <div>
-            <h2>Ready to get started?</h2>
-            <p>Create an administrator account and register your chama in minutes.</p>
-        </div>
-        <a class="btn" href="register.html">Register Your Chama</a>
-    </aside>
-    <footer>
-        <p>&copy; 2026 ChamaTrust. A student project supporting accountability in Kenyan savings groups.</p>
-        <p><a href="about.html">About Us</a> | <a href="contact.html">Contact</a></p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 ChamaTrust. All rights reserved.</p>
+  </footer>
 </body>
 </html>
