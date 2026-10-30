@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | ChamaTrust</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:wght@500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>ChamaTrust</p>
+        <p class="tagline">Building trust in community savings groups.</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html" aria-current="page">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <form class="form-card" action="#" method="post">
+                <p class="eyebrow">Member access</p>
+                <h1>Welcome back</h1>
+                <p>Sign in to stay connected to your chama.</p>
+                <div class="tabs">
+                    <a href="register.html">Sign up</a>
+                    <a href="login.html" aria-current="page">Sign in</a>
+                </div>
+                <div class="field">
+                    <label for="role">I am a</label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Choose one</option>
+                        <option value="member">Chama member</option>
+                        <option value="admin">Chama administrator</option>
+                    </select>
+                    <p class="hint">Administrator access is for chama administrators only.</p>
+                </div>
+                <div class="field">
+                    <label for="identifier">Email or phone number</label>
+                    <input type="text" id="identifier" name="identifier" placeholder="Enter your email or phone number" autocomplete="username" required>
+                    <p class="hint">For phone numbers, include your country code.</p>
+                </div>
+                <div class="field">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="contact.html">Forgot password?</a>
+                    </div>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+                <button type="submit">Sign In <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <p class="form-alt">New to ChamaTrust? <a href="register.html">Create an account</a></p>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h2>A secure space for members</h2>
+        <p>Keep your password private. ChamaTrust will never ask you to share it.</p>
+        <a class="btn" href="contact.html">Help center</a>
+    </aside>
+    <footer>
+        <p>&copy; 2026 ChamaTrust. A student project supporting accountability in Kenyan savings groups.</p>
+        <p><a href="about.html">About Us</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>
